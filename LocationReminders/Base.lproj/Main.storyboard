@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sag-dW-YuB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="REG-wN-EIk">
+                                <rect key="frame" x="50" y="20" width="500" height="500"/>
+                                <gestureRecognizers/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeU-Ti-0xQ">
+                                <rect key="frame" x="117" y="528" width="94" height="30"/>
+                                <state key="normal" title="Code Fellows">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="codeFellowsLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="euA-lO-43N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gD-be-sf1">
+                                <rect key="frame" x="231" y="528" width="138" height="30"/>
+                                <state key="normal" title="LV Motor Speedway">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lasVegasSpeedwayLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IaS-J8-bLf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dh-ju-kRN">
+                                <rect key="frame" x="389" y="528" width="78" height="30"/>
+                                <state key="normal" title="Hong Kong">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hongKongLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JbE-nC-3TK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BeU-Ti-0xQ" firstAttribute="top" secondItem="3gD-be-sf1" secondAttribute="top" id="0N5-FL-gOc"/>
+                            <constraint firstItem="3gD-be-sf1" firstAttribute="leading" secondItem="BeU-Ti-0xQ" secondAttribute="trailing" constant="20" id="AO9-Ok-5zQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="REG-wN-EIk" secondAttribute="bottom" id="HVF-hT-AvQ"/>
+                            <constraint firstItem="REG-wN-EIk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="Pjy-eh-Zlh"/>
+                            <constraint firstItem="3gD-be-sf1" firstAttribute="top" secondItem="REG-wN-EIk" secondAttribute="bottom" constant="8" id="QLo-HW-O9g"/>
+                            <constraint firstItem="7Dh-ju-kRN" firstAttribute="leading" secondItem="3gD-be-sf1" secondAttribute="trailing" constant="20" id="QnD-aY-DxD"/>
+                            <constraint firstItem="REG-wN-EIk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ThC-ue-NIn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="REG-wN-EIk" secondAttribute="bottom" constant="80" id="WmI-Yv-LgF"/>
+                            <constraint firstItem="BeU-Ti-0xQ" firstAttribute="top" secondItem="7Dh-ju-kRN" secondAttribute="top" id="Ybe-9h-zi3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="REG-wN-EIk" secondAttribute="trailing" constant="34" id="gIW-sC-YKv"/>
+                            <constraint firstItem="REG-wN-EIk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="hfu-il-ekM"/>
+                            <constraint firstAttribute="centerX" secondItem="3gD-be-sf1" secondAttribute="centerX" id="jL4-vm-42m"/>
+                            <constraint firstItem="REG-wN-EIk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jmm-Al-LWg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="REG-wN-EIk" secondAttribute="trailing" constant="-16" id="toe-jc-Exw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ThC-ue-NIn"/>
+                                <exclude reference="hfu-il-ekM"/>
+                                <exclude reference="toe-jc-Exw"/>
+                                <exclude reference="HVF-hT-AvQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="8MT-cD-ksk"/>
+                    <connections>
+                        <outlet property="mapView" destination="REG-wN-EIk" id="6iN-51-8yK"/>
+                        <segue destination="S7s-Aj-g9m" kind="show" identifier="ShowDetailView" id="z8s-V7-Hb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="317"/>
+        </scene>
+        <!--Add Reminder Detail View Controller-->
+        <scene sceneID="wpg-VR-o2u">
+            <objects>
+                <viewController id="S7s-Aj-g9m" customClass="AddReminderDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YoT-on-iid"/>
+                        <viewControllerLayoutGuide type="bottom" id="78U-lE-NRC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mT6-b4-31m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9R-nW-o4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="1107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zfB-gr-xo4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sag-dW-YuB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ih-km-jGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BIz-4M-EHd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4d-xa-hjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="317"/>
+        </scene>
+    </scenes>
+</document>
