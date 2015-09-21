@@ -36,7 +36,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We are going to monitor your location for reminders</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

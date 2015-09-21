@@ -10,3 +10,4 @@
 
 
 NSString *const kMyCity = @"Seattle";
+NSString *const kReminderNotification = @"ReminderNotification";
